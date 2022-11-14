@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppTheme" parent="android:Theme.Light" />
+    <style
+        name="TitleLabel"
+        parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style
+        name="BodyLabel"
+        parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style
+        name="TitleView"
+        parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style
+        name="BodyView"
+        parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

@@ -1,0 +1,196 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:id="@+id/test">
+        <TextView
+            android:id="@+id/nameLabel"
+            style="@style/TitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/name_label" />
+        <TextView
+            android:id="@+id/vendorLabel"
+            style="@style/TitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/nameLabel"
+            android:layout_below="@id/nameLabel"
+            android:text="@string/vendor_label" />
+
+        <TextView
+            android:id="@+id/typeLabel"
+            style="@style/BodyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/vendorLabel"
+            android:layout_below="@id/vendorLabel"
+            android:text="@string/type_label" />
+        <TextView
+            android:id="@+id/maximumRangeLabel"
+            style="@style/BodyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/typeLabel"
+            android:layout_below="@id/typeLabel"
+            android:text="@string/maximum_range_label" />
+        <TextView
+            android:id="@+id/resolutionLabel"
+            style="@style/BodyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/maximumRangeLabel"
+            android:layout_below="@id/maximumRangeLabel"
+            android:text="@string/resolution_label" />
+        <TextView
+            android:id="@+id/minDelayLabel"
+            style="@style/BodyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/resolutionLabel"
+            android:layout_below="@id/resolutionLabel"
+            android:text="@string/min_delay_label" />
+        <TextView
+            android:id="@+id/powerLabel"
+            style="@style/BodyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/minDelayLabel"
+            android:layout_below="@id/minDelayLabel"
+            android:text="@string/power_label" />
+        <TextView
+            android:id="@+id/nameView"
+            style="@style/TitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/nameLabel"
+            android:layout_alignBottom="@id/nameLabel"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/nameLabel"
+            android:singleLine="true"
+            android:text="@string/default_text" />
+        <TextView
+            android:id="@+id/versionLabel"
+            style="@style/BodyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/nameView"
+            android:layout_alignBottom="@id/nameView"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/nameView"
+            android:text="@string/version_label" />
+        <TextView
+            android:id="@+id/vendorView"
+            style="@style/TitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/vendorLabel"
+            android:layout_alignBottom="@id/vendorLabel"
+            android:layout_alignLeft="@id/nameView"
+            android:singleLine="true"
+            android:text="@string/default_text" />
+        <TextView
+        android:id="@+id/typeView"
+        style="@style/BodyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/typeLabel"
+        android:layout_alignBottom="@id/typeLabel"
+        android:layout_alignLeft="@id/nameView"
+        android:text="@string/default_text" />
+        <TextView
+            android:id="@+id/versionView"
+            style="@style/BodyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/versionLabel"
+            android:layout_alignBottom="@id/versionLabel"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/versionLabel"
+            android:text="@string/default_text" />
+
+        <TextView
+            android:id="@+id/maximumRangeView"
+            style="@style/BodyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/maximumRangeLabel"
+            android:layout_alignLeft="@id/nameView"
+            android:layout_alignBottom="@id/maximumRangeLabel"
+            android:text="@string/default_text" />
+        <TextView
+            android:id="@+id/unitsRangeView"
+            style="@style/BodyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/maximumRangeView"
+            android:layout_alignBottom="@id/maximumRangeView"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/maximumRangeView"
+            android:text="" />
+        <TextView
+            android:id="@+id/minDelayView"
+            style="@style/BodyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/minDelayLabel"
+            android:layout_alignBottom="@id/minDelayLabel"
+            android:layout_alignLeft="@id/nameView"
+            android:text="@string/default_text" />
+        <TextView
+            android:id="@+id/unitsDelayView"
+            style="@style/BodyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/minDelayView"
+            android:layout_alignBottom="@id/minDelayView"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/minDelayView"
+            android:text="" />
+        <TextView
+        android:id="@+id/powerView"
+        style="@style/BodyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/powerLabel"
+        android:layout_alignBottom="@id/powerLabel"
+        android:layout_alignLeft="@id/nameView"
+        android:text="@string/default_text" />
+        <TextView
+            android:id="@+id/unitsPowerView"
+            style="@style/BodyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/powerView"
+            android:layout_alignBottom="@id/powerView"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/powerView"
+            android:text="" />
+        <TextView
+            android:id="@+id/resolutionView"
+            style="@style/BodyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/resolutionLabel"
+            android:layout_alignBottom="@id/resolutionLabel"
+            android:layout_alignLeft="@id/nameView"
+            android:text="@string/default_text" />
+        <TextView
+            android:id="@+id/unitsResolutionView"
+            style="@style/BodyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/resolutionView"
+            android:layout_alignBottom="@id/resolutionView"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/resolutionView"
+            android:text="" />
+    </RelativeLayout>
+</HorizontalScrollView>

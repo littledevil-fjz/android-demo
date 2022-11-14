@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">SensorList</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Setting</string>
+    <string name="name_label">Name</string>
+    <string name="vendor_label">Vendor</string>
+    <string name="default_text">not found</string>
+    <string name="type_label">Type</string>
+    <string name="version_label">Version</string>
+    <string name="maximum_range_label">Max Range</string>
+    <string name="min_delay_label">Min Delay</string>
+    <string name="resolution_label">Resolution</string>
+    <string name="power_label">Power</string>
+</resources>

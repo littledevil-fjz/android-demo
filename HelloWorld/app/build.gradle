@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.application'
+}
+//配置项目构建的各种属性
+android {
+    compileSdk 31
+    //对项目的细节进行配置
+    defaultConfig {
+        applicationId "com.example.helloworld"          //项目包名
+        minSdk 21                                       //项目最低兼容的Android版本
+        targetSdk 31                                    //表示你在该目标版本上已经做过了充分的测试，系统将会为你的应用程序启用一些最新的功能和特性。
+        versionCode 1                                   //项目版本号
+        versionName "1.0"                               //项目的版本名
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    //指定生成安装文件的相关配置
+    buildTypes {
+        release {
+            minifyEnabled false                         //用于指定是否对项目的代码进行混淆
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+//指定当前项目所有的依赖关系
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
